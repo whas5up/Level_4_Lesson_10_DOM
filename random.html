@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lynn Schirmer for CFA 2022">
+    <title>THE DOM</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="words.js"></script>
+    <script type="text/javascript" src="madlibs.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mad Libs: Random Words</h1>
+    </header>
+    <main>
+        <div id="mad-lib-container">
+            <p id="mad-lib">Your Mad Lib will appear here</p>
+        </div>
+
+        <div class="play" id="random-play">
+            <p>Insert random words</p>
+            <button id="random" type="button">Play!</button>
+        </div>
+    </main>
+    <script>
+        var noun, verb, adjective, adverb;
+        let words = defaultWords;
+
+        function randomize() {
+            let maxIndex = words.length - 1;
+            let num1 = Math.round(Math.random() * maxIndex);
+            let num2 = Math.round(Math.random() * maxIndex);
+            let num3 = Math.round(Math.random() * maxIndex);
+            let num4 = Math.round(Math.random() * maxIndex);
+            //Exercise 9
+            //Assign a random word value to each of the variables: noun, verb, adjective, adverb
+            //Use the index and the above random number variables to get the random word from the words array
+            
+
+
+
+
+            //Exercise 10
+            //Call the display function
+            
+        }
+
+        //Exercise 11
+        //Use the query selector method to select the button tag by its id
+        //Add an event listener to call function radomize on the click event 
+       
+        
+    </script>
+</body>
+
+</html>

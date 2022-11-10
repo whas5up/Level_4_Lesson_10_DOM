@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lynn Schirmer for CFA 2022">
+    <title>THE DOM</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="madlibs.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mad Libs: Fill in the words</h1>
+    </header>
+    <main>
+        <div id="mad-lib-container">
+            <p id="mad-lib">Your Mad Lib will appear here</p>
+        </div>
+        <form class="play" id="guess-play">
+            <label for="noun-input">Noun</label>
+            <input type="text" id="noun-input" class="classy" required>
+            <label for="adjective-input">Adjective</label>
+            <input type="text" id="adjective-input" class="classy" required>
+            <label for="verb-input">Verb</label>
+            <input type="text" id="verb-input" class="classy" required>
+            <label for="adverb-input">Adverb ending in -ly</label>
+            <input type="text" id="adverb-input" class="classy" required>
+            <button type="submit">Play!</button>
+        </form>
+    </main>
+    <script>
+        var noun, verb, adjective, adverb;
+        //Exercise 3
+        //Give the button a class name
+        //Select buttons by tagname
+        //Use the index to get the first one
+        //Use the className property to set a new class
+
+
+
+        function generate(evt) {
+            evt.preventDefault();
+            /*Exercise 4
+            Give a value to the variables noun, verb, adjective, adverb by
+            selecting each input tag by its id, and getting its value.*/
+          
+
+
+
+
+            //Exercise 5
+            //Call the display function
+            
+        }
+        //Exercise 6 is in madlibs.js
+
+        //Exercise 7
+        //Use querySelector() to select the form by its tagname
+        
+        //Exercise 8
+        //Add an event listener to call the generate function on the 'submit' event
+      
+
+    </script>
+</body>
+
+</html>
