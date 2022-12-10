@@ -39,6 +39,9 @@
         //Select buttons by tagname
         //Use the index to get the first one
         //Use the className property to set a new class
+        let var4 = document.getElementsByTagName('button');
+        var4 = var4[0];
+        var4.className = 'new-class';
 
 
 
@@ -47,22 +50,25 @@
             /*Exercise 4
             Give a value to the variables noun, verb, adjective, adverb by
             selecting each input tag by its id, and getting its value.*/
-          
-
-
-
+            noun = document.getElementById('noun-input').value;
+            verb = document.getElementById('verb-input').value;
+            adjective = document.getElementById('adjective-input').value;
+            adverb = document.getElementById('adverb-input').value;
+            
 
             //Exercise 5
             //Call the display function
-            
+            display();
         }
         //Exercise 6 is in madlibs.js
 
         //Exercise 7
         //Use querySelector() to select the form by its tagname
+        let form = document.querySelector('#guess-play');
         
         //Exercise 8
         //Add an event listener to call the generate function on the 'submit' event
+        form.addEventListener('submit', generate);
       
 
     </script>

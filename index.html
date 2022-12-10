@@ -35,8 +35,14 @@
         //Select all the div tags and assign them a variable
         //Select all the tags with class choice and assign them a variable
         //Use the variables to show the tags in the console
-     
+        var pTag = document.getElementById('mad-lib');
+        console.log(pTag);
 
+        var divTags = document.getElementsByTagName('btns');
+        console.log(divTags);
+
+        var choiceTags = document.getElementsByClassName('choice');
+        console.log(choiceTags);
 
 
         
@@ -45,6 +51,8 @@
         //Change the p tag's text content to something new
         //Change the p tag's innerHTML to the hahaha.png
 
+        pTag.textContent = 'This is new text';
+        pTag.innerHTML = '<img src="images/hahaha.png" alt="hahaha image">';
         
 
         //Exercise 3 is in form.html

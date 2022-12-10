@@ -40,20 +40,22 @@
             //Exercise 9
             //Assign a random word value to each of the variables: noun, verb, adjective, adverb
             //Use the index and the above random number variables to get the random word from the words array
-            
-
-
+            noun = words[num1];
+            verb = words[num2];
+            adjective = words[num3];
+            adverb = words[num4];
 
 
             //Exercise 10
             //Call the display function
-            
+            display();
         }
 
         //Exercise 11
         //Use the query selector method to select the button tag by its id
-        //Add an event listener to call function radomize on the click event 
-       
+        //Add an event listener to call function randomize on the click event 
+        let randomButton = document.querySelector('#random');
+        randomButton.addEventListener('click', randomize);
         
     </script>
 </body>
